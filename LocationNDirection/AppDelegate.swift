@@ -2,20 +2,25 @@
 //  AppDelegate.swift
 //  LocationNDirection
 //
-//  Created by ascratech2 on 06/05/17.
+//  Created by sagar on 07/05/17.
 //  Copyright © 2017 Sagar. All rights reserved.
 //
 
 import UIKit
+import GoogleMaps
+import GooglePlaces
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        GMSServices.provideAPIKey("AIzaSyCaA4sR9aiFmldaqBDZ9dL6_yG4501T2bI")
+        GMSPlacesClient.provideAPIKey("AIzaSyCaA4sR9aiFmldaqBDZ9dL6_yG4501T2bI")
+        
         return true
     }
 

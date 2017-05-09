@@ -12,9 +12,12 @@
 		712695611EBDB24B00854382 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7126955F1EBDB24B00854382 /* Main.storyboard */; };
 		712695631EBDB24B00854382 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 712695621EBDB24B00854382 /* Assets.xcassets */; };
 		712695661EBDB24B00854382 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 712695641EBDB24B00854382 /* LaunchScreen.storyboard */; };
+		CDC55D6DF8ECDCD00A851B48 /* Pods_LocationNDirection.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 282DBBA65B36AC5D56F568B9 /* Pods_LocationNDirection.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		282DBBA65B36AC5D56F568B9 /* Pods_LocationNDirection.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LocationNDirection.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		57C1DD9AE7E57464C10D3FD8 /* Pods-LocationNDirection.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LocationNDirection.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LocationNDirection/Pods-LocationNDirection.debug.xcconfig"; sourceTree = "<group>"; };
 		712695581EBDB24B00854382 /* LocationNDirection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocationNDirection.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7126955B1EBDB24B00854382 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7126955D1EBDB24B00854382 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		712695621EBDB24B00854382 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		712695651EBDB24B00854382 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		712695671EBDB24B00854382 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7AEF831508E6EB9DDF8E3A5 /* Pods-LocationNDirection.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LocationNDirection.release.xcconfig"; path = "Pods/Target Support Files/Pods-LocationNDirection/Pods-LocationNDirection.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDC55D6DF8ECDCD00A851B48 /* Pods_LocationNDirection.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2FA2516492A2BD364C997BAB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				282DBBA65B36AC5D56F568B9 /* Pods_LocationNDirection.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7126954F1EBDB24B00854382 = {
 			isa = PBXGroup;
 			children = (
 				7126955A1EBDB24B00854382 /* LocationNDirection */,
 				712695591EBDB24B00854382 /* Products */,
+				7D5AFE0DF45FDF7028A55982 /* Pods */,
+				2FA2516492A2BD364C997BAB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +79,15 @@
 			path = LocationNDirection;
 			sourceTree = "<group>";
 		};
+		7D5AFE0DF45FDF7028A55982 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				57C1DD9AE7E57464C10D3FD8 /* Pods-LocationNDirection.debug.xcconfig */,
+				B7AEF831508E6EB9DDF8E3A5 /* Pods-LocationNDirection.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7126956A1EBDB24B00854382 /* Build configuration list for PBXNativeTarget "LocationNDirection" */;
 			buildPhases = (
+				047EDD15ABCD173DEC670530 /* [CP] Check Pods Manifest.lock */,
 				712695541EBDB24B00854382 /* Sources */,
 				712695551EBDB24B00854382 /* Frameworks */,
 				712695561EBDB24B00854382 /* Resources */,
+				26F8E84CBB4C73692272B022 /* [CP] Embed Pods Frameworks */,
+				1958227B65F9C70A87F3BBFF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -96,6 +123,7 @@
 				TargetAttributes = {
 					712695571EBDB24B00854382 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = HN7HE9THJU;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -130,6 +158,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		047EDD15ABCD173DEC670530 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		1958227B65F9C70A87F3BBFF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LocationNDirection/Pods-LocationNDirection-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		26F8E84CBB4C73692272B022 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LocationNDirection/Pods-LocationNDirection-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		712695541EBDB24B00854382 /* Sources */ = {
@@ -258,9 +334,12 @@
 		};
 		7126956B1EBDB24B00854382 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57C1DD9AE7E57464C10D3FD8 /* Pods-LocationNDirection.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = HN7HE9THJU;
 				INFOPLIST_FILE = LocationNDirection/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.location.sap.LocationNDirection;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -270,9 +349,12 @@
 		};
 		7126956C1EBDB24B00854382 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7AEF831508E6EB9DDF8E3A5 /* Pods-LocationNDirection.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = HN7HE9THJU;
 				INFOPLIST_FILE = LocationNDirection/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.location.sap.LocationNDirection;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -299,6 +381,7 @@
 				7126956C1EBDB24B00854382 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

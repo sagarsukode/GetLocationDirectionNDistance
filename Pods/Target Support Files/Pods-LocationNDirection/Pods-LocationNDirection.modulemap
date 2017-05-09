@@ -1,0 +1,6 @@
+framework module Pods_LocationNDirection {
+  umbrella header "Pods-LocationNDirection-umbrella.h"
+
+  export *
+  module * { export * }
+}
